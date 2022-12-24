@@ -111,6 +111,9 @@ alias vim="nvim"
 alias zshrc="vim ~/.zshrc"
 alias ls="ls -lah --color"
 alias weather="curl wttr.in"
+alias createvenv="python3 -m venv ./venv"
+alias startvenv='source bin/activate; cd bin'
+alias exitvenv='deactivate'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
