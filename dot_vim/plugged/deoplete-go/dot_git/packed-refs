@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+88272d5466dcc592ae56aae39742c9098e3c14b0 refs/remotes/origin/cache-and-fallback
+c3ba4f4cdfa2550d67fc85f20d55bd324847179b refs/remotes/origin/libclang/7.0.1
+d701ebb8b61d347e3d483c539bb9a3bcee2e5e52 refs/remotes/origin/libclang/v10.0.0
+d836d3b2db6029d9a6502ff7394dc1d2aa5946ea refs/remotes/origin/libclang/v9.0.0
+4eac2e6f127f2e2601dee415db2f826e2c9ef16c refs/remotes/origin/master
