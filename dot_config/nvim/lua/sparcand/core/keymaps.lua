@@ -3,6 +3,14 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 
+-- Modes
+--   normal_mode = "n",
+--   insert_mode = "i",
+--   visual_mode = "v",
+--   visual_block_mode = "x",
+--   term_mode = "t",
+--   command_mode = "c",
+
 ---------------------
 -- General Keymaps
 ---------------------
@@ -27,6 +35,37 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+
+-- Resize with arrows
+keymap.set("n", "<C-Up>", ":resize +2<CR>") --, opts)
+keymap.set("n", "<C-Down>", ":resize -2<CR>") --, opts)
+keymap.set("n", "<C-Left>", ":vertical resize -2<CR>") --, opts)
+keymap.set("n", "<C-Right>", ":vertical resize +2<CR>") --, opts)
+
+-- Navigate buffers
+keymap.set("n", "<S-l>", ":bnext<CR>") --, opts)
+keymap.set("n", "<S-h>", ":bprevious<CR>") --, opts)
+
+-- Insert --
+-- Press jk fast to enter
+keymap.set("i", "jk", "<ESC>") --, opts)
+
+-- Visual --
+-- Stay in indent mode
+keymap.set("v", "<", "<gv") --, opts)
+keymap.set("v", ">", ">gv") --, opts)
+
+-- Move text up and down
+keymap.set("v", "<A-j>", ":m .+1<CR>==") --, opts)
+keymap.set("v", "<A-k>", ":m .-2<CR>==") --, opts)
+keymap.set("v", "p", '"_dP') --, opts)
+
+-- Visual Block --
+-- Move text up and down
+keymap.set("x", "J", ":move '>+1<CR>gv-gv") --, opts)
+keymap.set("x", "K", ":move '<-2<CR>gv-gv") --, opts)
+keymap.set("x", "<A-j>", ":move '>+1<CR>gv-gv") --, opts)
+keymap.set("x", "<A-k>", ":move '<-2<CR>gv-gv") --, opts)
 
 ----------------------
 -- Plugin Keybinds

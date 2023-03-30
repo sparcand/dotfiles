@@ -30,13 +30,9 @@ end
 return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
-
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- essential plugins
