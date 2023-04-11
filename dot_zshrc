@@ -11,7 +11,7 @@ fi
 export PATH=/Users/steveops/Library/Python/3.9/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/packages/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -160,3 +160,5 @@ if ! zplug check --verbose; then
         echo; zplug install
     fi
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
